@@ -15,3 +15,38 @@ The **Background Remover App** is a Streamlit-based application that allows user
 2. **Clone the Repository**
    ```bash
    git clone <repo-url>
+3.**Create a virtual environment**
+   python -m venv env
+
+4. **Activate the virtual environment**
+
+   On Windows:
+   .\env\Scripts\activate
+   On macOS and Linux:
+   source env/bin/activate
+5.**Install dependencies**
+   pip install -r requirements.txt
+6.Download the Segment Anything Model (SAM) checkpoint:
+   wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth
+
+##Usage
+1.**Run the Streamlit app**
+   streamlit run app.py
+2.**Interact with the app**
+
+3.**Upload an image file in JPEG, JPG, or PNG format**
+
+Click on the "Original" button to view the uploaded image.
+Click on the image to select the point where you want the background removed.
+Hit the "Remove background" button to generate the processed image without the background.
+API Deployment (Optional)
+The app is configured to work with a Modelbit API for background removal.
+Endpoint: use your api from modelbit
+Input: Encoded image in Base64 format and X/Y coordinates.
+Output: Processed image with transparent background.
+
+##Troubleshooting
+Ensure the SAM checkpoint is downloaded and in the correct path.
+Check if all dependencies are properly installed.
+##License
+This project is licensed under the MIT License. See the LICENSE file for details.
