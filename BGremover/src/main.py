@@ -34,7 +34,7 @@ def set_background(image_file):
 
 set_background('bg.jpg')
 
-api_endpoint = "https://ussayedshakeelabbasi.us-east-2.aws.modelbit.com/v1/remove_background/latest"
+api_endpoint = none
 
 col01, col02 = st.columns(2)
 
