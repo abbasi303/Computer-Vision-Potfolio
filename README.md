@@ -40,7 +40,7 @@ The **Background Remover App** is a Streamlit-based application that allows user
 ## Usage
 1. **Run the Streamlit app**
    ```bash
-   streamlit run app.py
+   streamlit run main.py
 2. **Interact with the app**
 
 -Upload an image file in JPEG, JPG, or PNG format
